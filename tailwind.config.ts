@@ -36,6 +36,7 @@ const config = {
       colors: {
         dark: {
           DEFAULT: "#111313",
+          400: "#1B2624"
         },
         white: {
           DEFAULT: "#FFF",
