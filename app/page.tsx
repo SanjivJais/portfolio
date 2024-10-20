@@ -1,10 +1,15 @@
+import { About } from "@/components/About";
+import { Hero } from "@/components/Hero";
+import { Navbar } from "@/components/Navbar";
 
 
 export default function Home() {
   return (
-    <main className="text-red-500 h-60 w-96 bg-dark">
-      <div>
-        <h1>Sanjiv Here!</h1>
+    <main className="relative bg-dark flex justify-center items-start flex-col overflow-hidden sm:px-10 px-5">
+      <div className="w-full flex flex-col items-center">
+        <Navbar />
+        <Hero />
+        <About />
       </div>
     </main>
   );
