@@ -88,6 +88,9 @@
   .card_grad {
     background: linear-gradient(90deg, #141B1A 58%, #1B262480 100%);
   }
+  .card_grad100 {
+    background: linear-gradient(90deg, #141B1A 58%, #1B2624 100%);
+  }
 
 
   .fancy_grad_bg {

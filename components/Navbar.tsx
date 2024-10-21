@@ -45,7 +45,7 @@ export const Navbar = () => {
     <div className="relative w-full">
       <FloatingNav
         navItems={navItems}
-        className='text-sm text-white text-center font-light card_grad border-dark-400 border-[1px] border-opacity-80 py-4 px-10'
+        className='text-sm text-white text-center font-light card_grad100 border-dark-400 border-[1px] border-opacity-80 py-4 px-10'
       />
     </div>
   )
