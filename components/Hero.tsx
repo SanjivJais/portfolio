@@ -26,7 +26,7 @@ export const Hero = () => {
 
 
             <div className='flex flex-col'>
-                <h2 className='text-[44px] text-white z-30'>Hello, I'm</h2>
+                <h2 className='text-[44px] text-white z-30'>hi👋, i'm</h2>
                 <h2 className='font-secondary text-[64px] font-bold text-accent leading-[0.9] z-30'>Sanjiv Jaiswal</h2>
                 <p className='text-white-400 mt-6 max-w-[500px] z-30'>An Entrepreneurial Web Developer, Building Real Products For the Real World.</p>
                 <div className="flex gap-6 items-center z-30 mt-8">

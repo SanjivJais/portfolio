@@ -8,35 +8,37 @@ import { MdAppShortcut } from 'react-icons/md';
 import { TbBulbFilled, TbReportSearch } from 'react-icons/tb';
 import { FaHandshakeSimple } from 'react-icons/fa6';
 import { PiChartLineUpBold } from 'react-icons/pi';
+import { EducationTimeline } from '@/components/EducationTimeline'
 
 export const About = () => {
 
 
+  const [aboutTab, setAboutTab] = useState(0)
   const [skillTab, setSkillTab] = useState(0)
 
 
 
 
+
   return (
-    <div className='text-white-400 max-w-[1120px] w-full max-sm:px-4 pt-10 py-20'>
+    <div className='text-white-400 max-w-[1120px] w-full max-sm:px-4 pt-10 py-20 '>
 
       <h2 className='font-extrabold -tracking-[1px] leading-[60px] text-[42px] text-white-100 font-secondary text-center'>Let's <span className='text-accent'>Dive</span> In!</h2>
 
       <div className="flex justify-between w-full gap-8 mt-24">
+        
+        <div className="flex flex-col items-center gap-8 px-8 py-10 h-fit w-3/12 card_grad rounded-[32px] sticky top-0">
 
-        <div className="flex flex-col items-center gap-8 px-8 py-10 h-fit w-3/12 card_grad rounded-[32px]">
-
-          <div className='bg-accent text-center text-dark px-6 py-3 w-full rounded-full font-bold cursor-pointer shadow-glow'>Skills</div>
-          <div className='bg-transparent hover:bg-accent hover:text-dark text-center text-white-400 px-6 py-3 w-full rounded-full font-bold cursor-pointer hover:shadow-glow transition-all duration-150'>Education</div>
-          <div className='bg-transparent hover:bg-accent hover:text-dark text-center text-white-400 px-6 py-3 w-full rounded-full font-bold cursor-pointer hover:shadow-glow transition-all duration-150'>Experience</div>
-          <div className='bg-transparent hover:bg-accent hover:text-dark text-center text-white-400 px-6 py-3 w-full rounded-full font-bold cursor-pointer hover:shadow-glow transition-all duration-150'>About Me</div>
-
-
+          <div onClick={() => setAboutTab(0)} className={`${aboutTab === 0 ? 'bg-accent text-dark shadow-glow' : 'bg-transparent hover:bg-accent hover:text-dark text-white-400 hover:shadow-glow'} text-center px-6 py-3 w-full rounded-full font-bold cursor-pointer transition-all duration-150`}>Skills</div>
+          <div onClick={() => setAboutTab(1)} className={`${aboutTab === 1 ? 'bg-accent text-dark shadow-glow' : 'bg-transparent hover:bg-accent hover:text-dark text-white-400 hover:shadow-glow'} text-center px-6 py-3 w-full rounded-full font-bold cursor-pointer transition-all duration-150`}>Education</div>
+          <div onClick={() => setAboutTab(2)} className={`${aboutTab === 2 ? 'bg-accent text-dark shadow-glow' : 'bg-transparent hover:bg-accent hover:text-dark text-white-400 hover:shadow-glow'} text-center px-6 py-3 w-full rounded-full font-bold cursor-pointer transition-all duration-150`}>Experience</div>
+          <div onClick={() => setAboutTab(3)} className={`${aboutTab === 3 ? 'bg-accent text-dark shadow-glow' : 'bg-transparent hover:bg-accent hover:text-dark text-white-400 hover:shadow-glow'} text-center px-6 py-3 w-full rounded-full font-bold cursor-pointer transition-all duration-150`}>About Me</div>
 
         </div>
 
 
-        <div className="flex flex-col items-center gap-8 w-9/12 rounded-[32px]">
+
+        {aboutTab === 0 && <div className="flex flex-col items-center gap-8 w-9/12 rounded-[32px]">
 
           <div className="flex justify-between w-full gap-4">
 
@@ -46,7 +48,6 @@ export const About = () => {
 
 
           </div>
-
 
 
           {skillTab === 0 &&
@@ -160,7 +161,6 @@ export const About = () => {
           }
 
 
-
           {skillTab === 2 &&
             <div className="grid grid-cols-2 w-full gap-6">
 
@@ -184,7 +184,14 @@ export const About = () => {
           }
 
 
-        </div>
+        </div>}
+
+
+        {aboutTab === 1 &&
+          <div className='w-9/12'>
+            <EducationTimeline />
+          </div>
+        }
 
       </div>
 
