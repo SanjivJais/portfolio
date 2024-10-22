@@ -5,7 +5,7 @@ import { HoverBorderGradient } from './ui/hover-border-gradient'
 
 export const Hero = () => {
     return (
-        <div className='pb-20 pt-52 max-w-[1120px] w-full max-sm:px-4'>
+        <div className='h-screen flex items-center  max-w-[1120px] w-full max-sm:px-4'>
             <div className=''>
                 <Spotlight
                     className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen z-10"
@@ -26,12 +26,11 @@ export const Hero = () => {
 
 
             <div className='flex flex-col'>
-                <h2 className='text-4xl text-white z-30'>Hello, I'm</h2>
-                <h2 className='font-secondary text-5xl font-bold text-accent mt-2 z-30'>Sanjiv Jaiswal</h2>
+                <h2 className='text-[44px] text-white z-30'>Hello, I'm</h2>
+                <h2 className='font-secondary text-[64px] font-bold text-accent leading-[0.9] z-30'>Sanjiv Jaiswal</h2>
                 <p className='text-white-400 mt-6 max-w-[500px] z-30'>An Entrepreneurial Web Developer, Building Real Products For the Real World.</p>
                 <div className="flex gap-6 items-center z-30 mt-8">
                     <button className='bg-accent px-6 py-2 rounded-full w-fit font-bold shadow-glow'>Say Hi 👋</button>
-                    {/* <button className='card_grad px-6 py-2 rounded-full w-fit text-white-400 flex items-center gap-1'><span>Download CV</span> <IoIosArrowRoundDown className='text-accent text-2xl' /></button> */}
                     <div className="flex justify-center text-center">
                         <HoverBorderGradient
                             containerClassName="rounded-full"
