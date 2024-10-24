@@ -10,7 +10,7 @@ import { FaHandshakeSimple } from 'react-icons/fa6';
 import { PiChartLineUpBold } from 'react-icons/pi';
 import { EducationTimeline } from '@/components/EducationTimeline'
 
-export const About = () => {
+export const Skills = () => {
 
 
   const [aboutTab, setAboutTab] = useState(0)

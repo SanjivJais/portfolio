@@ -1,7 +1,7 @@
-import { About } from "@/components/About";
+import { Skills } from "@/components/Skills";
 import { Hero } from "@/components/Hero";
-import { Navbar } from "@/components/Navbar";
 import { Portfolio } from "@/components/Portfolio";
+import Navbar from "@/components/navbar";
 
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
       <div className="w-full flex flex-col items-center">
         <Navbar />
         <Hero />
-        <About />
+        {/* <Skills /> */}
         <Portfolio />
       </div>
     </main>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import {JetBrains_Mono, Inter} from "next/font/google"
+import { JetBrains_Mono, Inter } from "next/font/google"
 import "./globals.css";
+import { TooltipProvider } from "@radix-ui/react-tooltip";
 
 
 const inter = Inter({
@@ -25,12 +26,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${jetbrainsMono.variable} ${inter.variable}`}
-      >
-        {children}
-      </body>
-    </html>
+
+    <TooltipProvider>
+      <html lang="en">
+        <body
+          className={`${jetbrainsMono.variable} ${inter.variable}`}
+        >
+          {children}
+        </body>
+      </html>
+    </TooltipProvider>
   );
 }
