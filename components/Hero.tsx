@@ -2,10 +2,14 @@ import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { IoIosArrowRoundDown } from 'react-icons/io'
 import { HoverBorderGradient } from './ui/hover-border-gradient'
+import Image from 'next/image'
+import { FaArrowRightLong } from 'react-icons/fa6'
+import Link from 'next/link'
+import { DATA } from '@/data/resume'
 
 export const Hero = () => {
     return (
-        <div className='h-screen flex items-center  max-w-[1120px] w-full max-sm:px-4'>
+        <div className='h-screen flex items-center max-w-[1120px] w-full max-sm:px-4'>
             <div className=''>
                 <Spotlight
                     className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen z-10"
@@ -25,26 +29,45 @@ export const Hero = () => {
             </div>
 
 
-            <div className='flex flex-col'>
-                <h2 className='text-[44px] text-white z-30'>hi👋, i'm</h2>
-                <h2 className='font-secondary text-[64px] font-bold text-accent leading-[0.9] z-30'>Sanjiv Jaiswal</h2>
-                <p className='text-white-400 mt-6 max-w-[500px] z-30'>An Entrepreneurial Web Developer, Building Real Products For the Real World.</p>
+            <div className='flex flex-col w-full items-center justify-center text-center mb-10'>
+
+
+                <div className='w-fit h-fit gap-1 fancy_grad_bg p-[0.8px] rounded-full  mb-10  z-40 cursor-pointer'>
+                    <Link href={"https://moneybinds.com/"} target='_blank' className='group flex gap-1 items-center rounded-full text-white-400 bg-dark px-6 py-2 text-sm font-normal'>
+                        <span>🎉 Checkout My New MVP!</span>
+                        <FaArrowRightLong className=' transform group-hover:translate-x-1 transition-all duration-150' />
+                    </Link>
+                </div>
+
+                <Image
+                    src={`${DATA?.avatarUrl}`}
+                    alt={`${DATA?.name}`}
+                    width={132}
+                    height={132}
+                    className='rounded-full border-2 border-white-100 aspect-square object-cover object-top z-40 mb-2'
+                />
+
+                <h2 className='text-[44px] font-extrabold text-white z-30'>hi, i'm sanjiv👋</h2>
+                <p className='text-white-400 mt-3 max-w-[500px] z-30'>{DATA?.description}</p>
                 <div className="flex gap-6 items-center z-30 mt-8">
-                    <button className='bg-accent px-6 py-2 rounded-full w-fit font-bold shadow-glow'>Say Hi 👋</button>
                     <div className="flex justify-center text-center">
-                        <HoverBorderGradient
-                            containerClassName="rounded-full"
-                            as="button"
-                            className=" card_grad text-white flex items-center space-x-2 border-dark-400 py-2 px-6"
-                        >
-                            <span>Download CV</span>
-                            <IoIosArrowRoundDown className='text-accent text-2xl' />
-                        </HoverBorderGradient>
+                        <Link
+                            href={DATA?.cvDownloadLink}
+                            target="_blank">
+                            <HoverBorderGradient
+                                containerClassName="rounded-full"
+                                as="button"
+                                className=" card_grad text-white flex items-center space-x-2 border-dark-400 py-2 px-6"
+                            >
+                                <span>Download CV</span>
+                                <IoIosArrowRoundDown className='text-accent text-2xl' />
+                            </HoverBorderGradient>
+                        </Link>
                     </div>
                 </div>
             </div>
 
-        </div>
+        </div >
 
 
     )

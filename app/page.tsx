@@ -10,7 +10,7 @@ export default function Home() {
       <div className="w-full flex flex-col items-center">
         <Navbar />
         <Hero />
-        {/* <Skills /> */}
+        <Skills />
         <Portfolio />
       </div>
     </main>

@@ -9,10 +9,10 @@ export const DATA = {
     location: "Kathmandu, Nepal",
     locationLink: "#",
     description:
-        "An Entrepreneurial and Web Developer, Building Real Products For the Real World.",
+        "An Entrepreneurial Web Developer, Building Real Products For the Real World.",
     summary:
         "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
-    avatarUrl: "/me.jpg",
+    avatarUrl: "/me-square.jpg",
     skills: [
         "React",
         "Next.js",
@@ -24,6 +24,7 @@ export const DATA = {
         "UI/UX (Figma)",
     ],
 
+    cvDownloadLink: "#",
     
     navbar: [
         { href: "/", icon: HomeIcon, label: "Home" },
