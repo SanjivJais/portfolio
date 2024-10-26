@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // images: {
-    //     domains: ['assets.aceternity.com'], // Add the external domain here
-    // },
+    images: {
+        domains: ['images.unsplash.com'], // Add the external domain here
+    },
 };
 
 export default nextConfig;
