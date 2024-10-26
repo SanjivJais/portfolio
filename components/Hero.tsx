@@ -34,7 +34,7 @@ export const Hero = () => {
 
                 <div className='w-fit h-fit gap-1 fancy_grad_bg p-[0.8px] rounded-full  mb-10  z-40 cursor-pointer'>
                     <Link href={"https://moneybinds.com/"} target='_blank' className='group flex gap-1 items-center rounded-full text-white-400 bg-dark px-6 py-2 text-sm font-normal'>
-                        <span>🎉 Checkout My New MVP!</span>
+                        <span>🎉 Check Out My New MVP!</span>
                         <FaArrowRightLong className=' transform group-hover:translate-x-1 transition-all duration-150' />
                     </Link>
                 </div>
@@ -48,7 +48,7 @@ export const Hero = () => {
                 />
 
                 <h2 className='text-[44px] font-extrabold text-white z-30'>hi, i'm sanjiv👋</h2>
-                <p className='text-white-400 mt-3 max-w-[500px] z-30'>{DATA?.description}</p>
+                <div className='text-white-400 mt-3 max-w-[500px] z-30'>{DATA?.description}</div>
                 <div className="flex gap-6 items-center z-30 mt-8">
                     <div className="flex justify-center text-center">
                         <Link

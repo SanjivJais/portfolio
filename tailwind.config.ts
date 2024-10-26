@@ -42,17 +42,22 @@ const config = {
   			},
   			accent: {
   				DEFAULT: '#07998C'
-  			}
+  			},
+			card:{
+				DEFAULT: '#1B2624',
+			}
   		},
-
 		
   		boxShadow: {
-  			glow: '2px 2px 20px 0 #07998C20'
+  			glow: '2px 2px 20px 0 #07998C20',
+  			ultraGlow: '2px 2px 152px -8px #07998C15',
+
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
+  			sm: 'calc(var(--radius) - 4px)',
+			'32': "32px"
   		},
 
 

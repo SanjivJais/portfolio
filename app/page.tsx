@@ -2,6 +2,7 @@ import { Skills } from "@/components/Skills";
 import { Hero } from "@/components/Hero";
 import { Portfolio } from "@/components/Portfolio";
 import Navbar from "@/components/navbar";
+import About from "@/components/About";
 
 
 export default function Home() {
@@ -10,8 +11,12 @@ export default function Home() {
       <div className="w-full flex flex-col items-center">
         <Navbar />
         <Hero />
-        <Skills />
-        <Portfolio />
+        <div className="flex flex-col lg:mx-[260px] mx-14 ">
+          <About />
+          <Skills />
+          <Portfolio />
+
+        </div>
       </div>
     </main>
   );

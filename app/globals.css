@@ -36,4 +36,20 @@
     /* Make the text color transparent to reveal the background gradient */
   }
 
+  .heading_grad {
+    background: linear-gradient(180deg, #FFFFFF 0%, #99999920 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .bold-text{
+    @apply font-bold text-white;
+
+  }
+
+  .link-text{
+    @apply underline-offset-4 hover:underline font-bold text-white;
+  }
+
 }
