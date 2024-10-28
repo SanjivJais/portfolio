@@ -43,7 +43,7 @@ export const DATA = {
 
     contact: {
         email: "connect@sanjivjaiswal.com.np",
-        tel: "+977 9862495033",
+        tel: "+9779862495033",
         social: {
             LinkedIn: {
                 name: "LinkedIn",
@@ -190,129 +190,172 @@ export const DATA = {
     ],
 
 
+
+
+    technologies: [
+        {
+            id: "react",
+            name: "React JS",
+            image: "/tech-icons/react.svg",
+            description: "A JavaScript library for building user interfaces",
+        },
+        {
+            id: "javascript",
+            name: "JavaScript",
+            image: "/tech-icons/javascript.svg",
+            description: null,
+        },
+        {
+            id: "tailwindcss",
+            name: "Tailwind CSS",
+            image: "/tech-icons/tailwind.svg",
+            description: "A utility-first CSS framework",
+        },
+        {
+            id: "appwrite",
+            name: "Appwrite",
+            image: "/tech-icons/appwrite.svg",
+            description: "An open source backend as a service",
+        },
+        {
+            id: "apexcharts",
+            name: "ApexCharts",
+            image: "/tech-icons/apexcharts.png",
+            description: "A powerful charting library for React",
+        },
+        {
+            id: "nextjs",
+            name: "Next JS",
+            image: "/tech-icons/nextjs.svg",
+            description: "The React framework for production",
+        },
+        {
+            id: "typescript",
+            name: "TypeScript",
+            image: "/tech-icons/typescript.svg",
+            description: "A strongly typed programming language that builds on JavaScript",
+        },
+        {
+            id:"html",
+            name: "HTML",
+            image: "/tech-icons/html.svg",
+            description: null,
+        },
+        {
+            id:"css",
+            name: "CSS",
+            image: "/tech-icons/css.svg",
+            description: null,
+        },
+        {
+            id:"git",
+            name: "Git",
+            image: "/tech-icons/git.svg",
+            description: null,
+        },
+        {
+            id:"github",
+            name: "GitHub",
+            image: "/tech-icons/github.svg",
+            description: null,
+        },
+        {
+            id:"wordpress",
+            name: "WordPress",
+            image: "/tech-icons/wordpress.svg",
+            description: null,
+        },
+        {
+            id:"figma",
+            name: "Figma",
+            image: "/tech-icons/figma.svg",
+            description: "A popular UI/UX tool for prototyping and design",
+        },
+        {
+            id:"shadcnui",
+            name: "Shadcn UI",
+            image: "/tech-icons/shadcnui.svg",
+            description: "A powerful UI library for React and Next.js",
+        },
+        {
+            id:"framer-motion",
+            name: "Framer Motion",
+            image: "/tech-icons/framer-motion.svg",
+            description: "A motion library for React and Next.js",
+        }
+    ],
+
+
     projects: [
         {
-            title: "Chat Collect",
-            href: "https://chatcollect.com",
-            dates: "Jan 2024 - Feb 2024",
-            active: true,
+            title: "Moneybinds Web App",
             description:
-                "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+            <p className='text-white-100 text-[15px]'>A simple yet powerful personal money management app desgined to reduce complexity and make it easier to manage your money.</p>,
+            link: "https://moneybinds.com",
+            active: true,
             technologies: [
-                "Next.js",
-                "Typescript",
-                "PostgreSQL",
-                "Prisma",
-                "TailwindCSS",
-                "Stripe",
-                "Shadcn UI",
-                "Magic UI",
+                "react",
+                "javascript",
+                "tailwindcss",
+                "appwrite",
+                "apexcharts",
             ],
-            links: [
-                {
-                    type: "Website",
-                    href: "https://chatcollect.com",
-                    icon: <Icons.globe className="size-3" />,
-                },
-            ],
-            image: "",
+            image: "/project-thumbs/demo.png",
             video:
-                "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+                "#",
         },
         {
-            title: "Magic UI",
-            href: "https://magicui.design",
-            dates: "June 2023 - Present",
-            active: true,
+            title: "Moneybinds Web App",
             description:
-                "Designed, developed and sold animated UI components for developers.",
-            technologies: [
-                "Next.js",
-                "Typescript",
-                "PostgreSQL",
-                "Prisma",
-                "TailwindCSS",
-                "Stripe",
-                "Shadcn UI",
-                "Magic UI",
-            ],
-            links: [
-                {
-                    type: "Website",
-                    href: "https://magicui.design",
-                    icon: <Icons.globe className="size-3" />,
-                },
-                {
-                    type: "Source",
-                    href: "https://github.com/magicuidesign/magicui",
-                    icon: <Icons.github className="size-3" />,
-                },
-            ],
-            image: "",
-            video: "https://cdn.magicui.design/bento-grid.mp4",
-        },
-        {
-            title: "llm.report",
-            href: "https://llm.report",
-            dates: "April 2023 - September 2023",
+                <p className='text-white-100 text-[15px]'>Started as a finance and crypto blog, Moneybinds has transformed into a useful money management app with the ultimate objective to remove complexity and provide simple yet accurate money tracking. </p>,
+            link: "https://moneybinds.com",
             active: true,
-            description:
-                "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
             technologies: [
-                "Next.js",
-                "Typescript",
-                "PostgreSQL",
-                "Prisma",
-                "TailwindCSS",
-                "Shadcn UI",
-                "Magic UI",
-                "Stripe",
-                "Cloudflare Workers",
+                "react",
+                "javascript",
+                "tailwindcss",
+                "appwrite",
+                "apexcharts",
             ],
-            links: [
-                {
-                    type: "Website",
-                    href: "https://llm.report",
-                    icon: <Icons.globe className="size-3" />,
-                },
-                {
-                    type: "Source",
-                    href: "https://github.com/dillionverma/llm.report",
-                    icon: <Icons.github className="size-3" />,
-                },
-            ],
-            image: "",
-            video: "https://cdn.llm.report/openai-demo.mp4",
-        },
-        {
-            title: "Automatic Chat",
-            href: "https://automatic.chat",
-            dates: "April 2023 - March 2024",
-            active: true,
-            description:
-                "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
-            technologies: [
-                "Next.js",
-                "Typescript",
-                "PostgreSQL",
-                "Prisma",
-                "TailwindCSS",
-                "Shadcn UI",
-                "Magic UI",
-                "Stripe",
-                "Cloudflare Workers",
-            ],
-            links: [
-                {
-                    type: "Website",
-                    href: "https://automatic.chat",
-                    icon: <Icons.globe className="size-3" />,
-                },
-            ],
-            image: "",
+            image: "/project-thumbs/demo.png",
             video:
-                "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+                "#",
         },
+        {
+            title: "Moneybinds Web App",
+            description:
+                <p className='text-white-100 text-[15px]'>Started as a finance and crypto blog, Moneybinds has transformed into a useful money management app with the ultimate objective to remove complexity and provide simple yet accurate money tracking. </p>,
+            link: "https://moneybinds.com",
+            active: true,
+            technologies: [
+                "react",
+                "javascript",
+                "tailwindcss",
+                "appwrite",
+                "apexcharts",
+            ],
+            image: "/project-thumbs/demo.png",
+            video:
+                "#",
+        },
+        {
+            title: "Moneybinds Web App",
+            description:
+                <p className='text-white-100 text-[15px]'>Started as a finance and crypto blog, Moneybinds has transformed into a useful money management app with the ultimate objective to remove complexity and provide simple yet accurate money tracking. </p>,
+            link: "https://moneybinds.com",
+            active: true,
+            technologies: [
+                "react",
+                "javascript",
+                "tailwindcss",
+                "appwrite",
+                "apexcharts",
+            ],
+            image: "/project-thumbs/demo.png",
+            video:
+                "#",
+        },
+        
     ],
 
 

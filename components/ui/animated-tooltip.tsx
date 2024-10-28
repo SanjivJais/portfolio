@@ -13,13 +13,13 @@ export const AnimatedTooltip = ({
     items,
 }: {
     items: {
-        id: number;
+        id: string;
         name: string;
-        designation: string;
+        description: string | null;
         image: string;
     }[];
 }) => {
-    const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+    const [hoveredIndex, setHoveredIndex] = useState<string | null>(null);
     const springConfig = { stiffness: 100, damping: 5 };
     const x = useMotionValue(0); // going to set this value on mouse move
     // rotate the tooltip
@@ -76,18 +76,21 @@ export const AnimatedTooltip = ({
                                     <div className="font-bold text-white relative z-30 text-base">
                                         {item.name}
                                     </div>
-                                    <div className="text-white text-xs">{item.designation}</div>
+                                    <div className="text-white text-xs">{item.description}</div>
                                 </motion.div>
                             )}
                         </AnimatePresence>
-                        <Image
-                            onMouseMove={handleMouseMove}
-                            height={100}
-                            width={100}
-                            src={item.image}
-                            alt={item.name}
-                            className="object-cover !m-0 !p-0 object-top rounded-full w-11 aspect-square border-2 group-hover:scale-105 group-hover:z-30 border-white  relative transition duration-500"
-                        />
+                        <div className="rounded-full aspect-square w-12 flex items-center justify-center card_grad border-card border-[1px] group-hover:scale-105 group-hover:z-30  relative transition duration-500">
+                            <Image
+                                onMouseMove={handleMouseMove}
+                                height={100}
+                                width={100}
+                                src={item.image}
+                                alt={item.name}
+                                className="object-fit !m-0 !p-0 object-top rounded-full w-7 aspect-square "
+                            />
+                        </div>
+
                     </div>
                 ))}
             </div>
