@@ -50,7 +50,7 @@ const config = {
 		
   		boxShadow: {
   			glow: '2px 2px 20px 0 #07998C20',
-  			ultraGlow: '2px 2px 152px -8px #07998C15',
+  			ultraGlow: '2px 2px 152px -8px #07998C20',
 
   		},
   		borderRadius: {

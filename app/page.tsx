@@ -3,6 +3,7 @@ import { Hero } from "@/components/Hero";
 import { Portfolio } from "@/components/Portfolio";
 import Navbar from "@/components/navbar";
 import About from "@/components/About";
+import { WhyMeRevealCanvas } from "@/components/whyMe";
 
 
 export default function Home() {
@@ -15,7 +16,7 @@ export default function Home() {
           <About />
           <Skills />
           <Portfolio />
-
+          <WhyMeRevealCanvas />
         </div>
       </div>
     </main>
