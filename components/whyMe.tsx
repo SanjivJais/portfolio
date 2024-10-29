@@ -11,7 +11,7 @@ export function WhyMeRevealCanvas() {
     const [hoveredIndex, setHoveredIndex] = React.useState(1);
     return (
         <>
-            <div className='flex flex-col items-center gap-12 mt-48 mb-48'>
+            <div className='flex flex-col items-center gap-12 mt-48'>
                 <h2 className='heading_grad text-4xl font-bold'>why me?</h2>
                 <div className="flex lg:flex-row flex-col items-center justify-between w-full gap-4 mx-auto">
 

@@ -4,6 +4,8 @@ import { Portfolio } from "@/components/Portfolio";
 import Navbar from "@/components/navbar";
 import About from "@/components/About";
 import { WhyMeRevealCanvas } from "@/components/whyMe";
+import { Contact } from "@/components/contact";
+import { Experience } from "@/components/experience";
 
 
 export default function Home() {
@@ -15,8 +17,10 @@ export default function Home() {
         <div className="flex flex-col lg:mx-[260px] mx-14 ">
           <About />
           <Skills />
+          <Experience />
           <Portfolio />
           <WhyMeRevealCanvas />
+          <Contact />
         </div>
       </div>
     </main>
