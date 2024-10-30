@@ -6,6 +6,7 @@ import About from "@/components/About";
 import { WhyMeRevealCanvas } from "@/components/whyMe";
 import { Contact } from "@/components/contact";
 import { Experience } from "@/components/experience";
+import { Education } from "@/components/education";
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
           <About />
           <Skills />
           <Experience />
+          <Education />
           <Portfolio />
           <WhyMeRevealCanvas />
           <Contact />
