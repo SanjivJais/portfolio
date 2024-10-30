@@ -121,37 +121,34 @@ export const DATA = {
 
     education: [
         {
-            school: "Buildspace",
-            href: "https://buildspace.so",
-            degree: "s3, s4, sf1, s5",
-            logoUrl: "/buildspace.jpg",
-            start: "2023",
-            end: "2024",
+            title: "Bachelor of Science in Computer Science and Information Technology (BSc.CSIT)",
+            school: "Tribhuvan University / Asian School of Management and Technology",
+            location: "Gongabu, Kathmandu, Nepal",
+            start: "2022",
+            end: "2026",
         },
         {
-            school: "University of Waterloo",
-            href: "https://uwaterloo.ca",
-            degree: "Bachelor's Degree of Computer Science (BCS)",
-            logoUrl: "/waterloo.png",
-            start: "2016",
+            title: "Higher Secondary School (Science)",
+            school: "Kathmandu Model College",
+            location: "Bagbazaar, Kathmandu, Nepal",
+            start: "2019",
             end: "2021",
         },
         {
-            school: "Wilfrid Laurier University",
-            href: "https://wlu.ca",
-            degree: "Bachelor's Degree of Business Administration (BBA)",
-            logoUrl: "/laurier.png",
-            start: "2016",
-            end: "2021",
+            title: "Secondary School",
+            school: "Geetanjali English Secondary School",
+            location: "Nayabazaar, Kathmandu, Nepal",
+            start: "2017",
+            end: "2019",
         },
         {
-            school: "International Baccalaureate",
-            href: "https://ibo.org",
-            degree: "IB Diploma",
-            logoUrl: "/ib.png",
-            start: "2012",
-            end: "2016",
+            title: "Primary School",
+            school: "Rajiv Gandhi Hindi High School",
+            location: "Vasai West, Maharastra, India",
+            start: "2014",
+            end: "2017",
         },
+        
     ],
 
 
@@ -323,35 +320,4 @@ export const DATA = {
         
     ],
 
-
-    // hackathons: [
-    //     {
-    //         title: "Hack Western 5",
-    //         dates: "November 23rd - 25th, 2018",
-    //         location: "London, Ontario",
-    //         description:
-    //             "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
-    //         image:
-    //             "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
-    //         mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-    //         links: [],
-    //     },
-    //     {
-    //         title: "DeveloperWeek Hackathon",
-    //         dates: "February 3rd - 4th, 2018",
-    //         location: "San Francisco, California",
-    //         description:
-    //             "Developed a web application which aggregates social media data regarding cryptocurrencies and predicts future prices.",
-    //         image:
-    //             "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/developer-week.jpg",
-    //         links: [
-    //             {
-    //                 title: "Github",
-    //                 icon: <Icons.github className="h-4 w-4" />,
-    //                 href: "https://github.com/cryptotrends/cryptotrends",
-    //             },
-    //         ],
-    //     },
-        
-    // ],
 } as const;

@@ -8,9 +8,9 @@ export const Education = () => {
             <h2 className='heading_grad text-4xl font-bold'>education</h2>
 
             <div className="flex flex-col bg-dark border-2 border-card rounded-32 w-full">
-                {/* {DATA.education.map((education, index) => (
-                    // <EducationCard key={index} experienceDetails={{ ...education, idx: index }} />
-                ))} */}
+                {DATA.education.map((education, index) => (
+                    <EducationCard key={index} educationDetails={{ ...education, idx: index }} />
+                ))}
 
             </div>
 
