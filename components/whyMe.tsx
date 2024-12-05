@@ -11,8 +11,8 @@ export function WhyMeRevealCanvas() {
     const [hoveredIndex, setHoveredIndex] = React.useState(1);
     return (
         <>
-            <div className='flex flex-col items-center gap-12 mt-48'>
-                <h2 className='heading_grad text-4xl font-bold'>why me?</h2>
+            <div className='flex flex-col items-center gap-12 md:mt-48 mt-36'>
+                <h2 className='heading_grad md:text-4xl text-3xl font-bold'>why me?</h2>
                 <div className="flex lg:flex-row flex-col items-center justify-between w-full gap-4 mx-auto">
 
                     <Card
@@ -91,7 +91,7 @@ const Card = ({
         <div
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(1)}
-            className={`${isHovered ? "shadow-ultraGlow" : ""} whyMeCard border-2 border-card rounded-32 group/canvas-card flex items-center justify-center bg-dark max-w-sm w-full mx-auto p-4 relative h-[30rem]`}
+            className={`${isHovered ? "shadow-ultraGlow" : ""} whyMeCard border-2 border-card rounded-32 group/canvas-card flex items-center justify-center bg-dark max-w-sm w-full mx-auto p-4 relative md:h-[30rem] h-[20rem]`}
         >
             {isHovered && <Icon className="absolute h-6 w-6 -top-5 -left-5 text-white-100" />}
             {isHovered && <Icon className="absolute h-6 w-6 -bottom-5 -left-5 text-white-100" />}

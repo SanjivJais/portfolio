@@ -23,7 +23,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({ experienceDetail
     return (
         <div>
             <div className={`flex flex-col gap-4 text-white-100 p-10 w-full ${DATA.experience.length - 1 !== experienceDetails.idx ? 'border-b-2 border-card' : ''}`}>
-                <div className="flex justify-between items-center">
+                <div className="flex max-md:flex-col max-md:gap-2 justify-between md:items-center">
                     <div className="flex">
                         <div className="relative">
                             <Image
@@ -33,7 +33,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({ experienceDetail
                                 height={25}
                             />
                         </div>
-                        <h3 className="text-white text-xl font-bold ml-4">{experienceDetails.title} {experienceDetails.company && <>at</>} {experienceDetails.href && experienceDetails.company? <Link href={experienceDetails.href} target="_blank" className="text-accent group inline-flex items-center gap-1">{experienceDetails.company} <MdArrowOutward className='transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-150' /></Link>: experienceDetails.company} </h3>
+                        <h3 className="text-white md:text-xl text-base font-bold ml-4">{experienceDetails.title} {experienceDetails.company && <>at</>} {experienceDetails.href && experienceDetails.company? <Link href={experienceDetails.href} target="_blank" className="text-accent group inline-flex items-center gap-1">{experienceDetails.company} <MdArrowOutward className='transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-150' /></Link>: experienceDetails.company} </h3>
                     </div>
 
                     <div className="flex items-center text-accent text-[15px] font-medium">
@@ -41,7 +41,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({ experienceDetail
                         <span className="ml-2 ">{experienceDetails.start} - {experienceDetails.end}</span>
                     </div>
                 </div>
-                <div>{experienceDetails.description}</div>
+                <div className='max-md:text-[15px]'>{experienceDetails.description}</div>
 
 
             </div>
