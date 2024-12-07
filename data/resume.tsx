@@ -37,7 +37,7 @@ export const DATA = {
     navbar: [
         { href: "/", icon: HomeIcon, label: "Home" },
         { href: "#projects", icon: Code, label: "Projects" },
-        { href: "/blog", icon: NotebookIcon, label: "Blog" },
+        // { href: "/blog", icon: NotebookIcon, label: "Blog" },
     ],
 
 
@@ -278,7 +278,7 @@ export const DATA = {
                 "tailwindcss",
                 "appwrite",
             ],
-            image: "/project-thumbs/demo.png",
+            image: "/project-thumbs/Esports_project_thumb.png",
             video:
                 "#",
         },

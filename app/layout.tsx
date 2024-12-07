@@ -16,8 +16,18 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Sanjiv Jaiswal",
+  title: "Sanjiv Jaiswal - Entreprenerial Web Developer | SEO Specialist",
   description: "Entrepreneurial web developer building real products!",
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+  },
+  icons: {
+    icon: "/favicons/favicon.ico",
+    shortcut: "/favicons/favicon-16x16.png",
+    apple: "/favicons/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
