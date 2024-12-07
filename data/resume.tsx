@@ -262,58 +262,56 @@ export const DATA = {
                 "appwrite",
                 "apexcharts",
             ],
-            image: "/project-thumbs/demo.png",
+            image: "/project-thumbs/Project_thumb_Moneybinds1.png",
             video:
                 "#",
         },
         {
-            title: "Moneybinds Web App",
+            title: "EsportsGravity - An Esports Platform",
             description:
-                <p className='text-white-100 text-[15px]'>Started as a finance and crypto blog, Moneybinds has transformed into a useful money management app with the ultimate objective to remove complexity and provide simple yet accurate money tracking. </p>,
-            link: "https://moneybinds.com",
+                <p className='text-white-100 text-[15px]'>A startup attempt to create a platform for Esports. This is a full-fledged esports platform where gamers can register for tournaments and compete to win exciting prizes. </p>,
+            link: "https://esportsgravity.com",
             active: true,
             technologies: [
                 "react",
                 "javascript",
                 "tailwindcss",
                 "appwrite",
-                "apexcharts",
             ],
             image: "/project-thumbs/demo.png",
             video:
                 "#",
         },
+        
         {
-            title: "Moneybinds Web App",
+            title: "My Portfolio - V1",
             description:
-                <p className='text-white-100 text-[15px]'>Started as a finance and crypto blog, Moneybinds has transformed into a useful money management app with the ultimate objective to remove complexity and provide simple yet accurate money tracking. </p>,
-            link: "https://moneybinds.com",
+                <p className='text-white-100 text-[15px]'>I built a completely thought out portfolio website to showcase my personality, work, and skills. Improved my Nextjs and frontend library skills while developing this page. I tried keeping it simple and clean. </p>,
+            link: "https://sanjivjaiswal.com.np",
             active: true,
             technologies: [
-                "react",
-                "javascript",
+                "nextjs",
+                "typescript",
                 "tailwindcss",
-                "appwrite",
-                "apexcharts",
+                "framer-motion",
+                "shadcnui",
             ],
-            image: "/project-thumbs/demo.png",
+            image: "/project-thumbs/Portfolio_thumb.png",
             video:
                 "#",
         },
         {
-            title: "Moneybinds Web App",
+            title: "Pixel Circle Generator for Minecraft Players",
             description:
-                <p className='text-white-100 text-[15px]'>Started as a finance and crypto blog, Moneybinds has transformed into a useful money management app with the ultimate objective to remove complexity and provide simple yet accurate money tracking. </p>,
-            link: "https://moneybinds.com",
+                <p className='text-white-100 text-[15px]'>MCCircleGenerator.com is a web tool that generates pixel art circles for Minecraft players. It has some unique and highly useful features that competitors don't have. </p>,
+            link: "https://mccirclegenerator.com",
             active: true,
             technologies: [
-                "react",
+                "html",
+                "css",
                 "javascript",
-                "tailwindcss",
-                "appwrite",
-                "apexcharts",
             ],
-            image: "/project-thumbs/demo.png",
+            image: "/project-thumbs/Project_thumb_MCCG.png",
             video:
                 "#",
         },
