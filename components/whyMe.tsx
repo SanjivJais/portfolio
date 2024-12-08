@@ -3,9 +3,6 @@ import React from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
-import { TbTargetArrow } from "react-icons/tb";
-import { IoMdRocket } from "react-icons/io";
-import { MdOutlineChangeCircle } from "react-icons/md";
 
 export function WhyMeRevealCanvas() {
     const [hoveredIndex, setHoveredIndex] = React.useState(1);
@@ -16,7 +13,7 @@ export function WhyMeRevealCanvas() {
                 <div className="flex lg:flex-row flex-col items-center justify-between w-full gap-4 mx-auto">
 
                     <Card
-                        title={<p>I’m Not Just a Developer, I’m a Strategic <span className="fancy_grad_text font-bold">Product Builder</span>.</p>}
+                        title={<p>I&apos;m Not Just a Developer, I&apos;m a Strategic <span className="fancy_grad_text font-bold">Product Builder</span>.</p>}
                         icon={<TargetIcon />}
                         index={0}
                         hoveredIndex={hoveredIndex}
@@ -85,7 +82,7 @@ const Card = ({
     hoveredIndex,
     setHoveredIndex,
 }: CardProps) => {
-    let isHovered = hoveredIndex === index;
+    const isHovered = hoveredIndex === index;
 
     return (
         <div
@@ -188,7 +185,7 @@ const EnergyIcon = () => {
 };
 
 
-export const Icon = ({ className, ...rest }: any) => {
+export const Icon = ({ className, ...rest }: React.SVGProps<SVGSVGElement>) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"

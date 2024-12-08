@@ -47,7 +47,7 @@ export const Hero = () => {
                     className='rounded-full border-2 border-white-100 aspect-square object-cover object-top z-40 mb-2'
                 />
 
-                <h2 className='md:text-[44px] text-[38px] font-extrabold text-white z-30'>hi, i'm sanjiv👋</h2>
+                <h2 className='md:text-[44px] text-[38px] font-extrabold text-white z-30'>hi, i&apos;m sanjiv👋</h2>
                 <div className='text-white-400 max-md:text-[15px] mt-3 max-w-[500px] z-30'>{DATA?.description}</div>
                 <div className="flex gap-6 items-center z-30 mt-8">
                     <div className="flex justify-center text-center">

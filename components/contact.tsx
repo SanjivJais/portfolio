@@ -24,7 +24,7 @@ export const Contact = () => {
                 }
             );
         } catch (err) {
-            toast.error("Failed to copy!");
+            toast.error("Failed to copy!: " + err);
         }
     };
 
@@ -33,7 +33,7 @@ export const Contact = () => {
             <h2 className='heading_grad md:text-4xl text-3xl font-bold'>get in touch</h2>
 
 
-            <p className='text-white-100 text-center max-w-xl'>Whether you're looking to collaborate or have a great opportunity in mind, <span className='bold-text'>let's connect</span> and make things happen!</p>
+            <p className='text-white-100 text-center max-w-xl'>Whether you&apos;re looking to collaborate or have a great opportunity in mind, <span className='bold-text'>let&apos;s connect</span> and make things happen!</p>
 
             <div className="flex flex-col gap-4 items-center mt-3">
                 <h3 className='fancy_grad_text md:text-xl text-lg'>Email me on</h3>

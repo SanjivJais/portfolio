@@ -11,7 +11,7 @@ interface ProjectCardProps {
         description: React.ReactElement;
         image: string;
         link: string;
-        technologies: any;
+        technologies: string[];
     }
 }
 
