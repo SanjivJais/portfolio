@@ -11,7 +11,9 @@ interface ProjectCardProps {
         description: React.ReactElement;
         image: string;
         link: string;
-        technologies: string[];
+        active: boolean;
+        video: string;
+        technologies: string[] | ReadonlyArray<string>;
     }
 }
 
