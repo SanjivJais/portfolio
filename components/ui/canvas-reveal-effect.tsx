@@ -180,6 +180,7 @@ type Uniforms = {
     };
 };
 
+
 const ShaderMaterial = ({
     source,
     uniforms,
@@ -207,8 +208,12 @@ const ShaderMaterial = ({
         timeLocation.value = timestamp;
     });
 
+
+
+
+
     const getUniforms = () => {
-        const preparedUniforms: { [key: string]: any } = {};
+        const preparedUniforms: { [key: string]: { value: number | number[] | number[][]; type: string } } = {};
 
         for (const uniformName in uniforms) {
             const uniform: { value: number | number[] | number[][]; type: string } = uniforms[uniformName];
@@ -219,7 +224,7 @@ const ShaderMaterial = ({
                     break;
                 case "uniform3f":
                     preparedUniforms[uniformName] = {
-                        value: new THREE.Vector3().fromArray(uniform.value as number[]),
+                        value: new THREE.Vector3().fromArray(uniform.value as number[]).toArray(),
                         type: "3f",
                     };
                     break;
@@ -229,14 +234,14 @@ const ShaderMaterial = ({
                 case "uniform3fv":
                     preparedUniforms[uniformName] = {
                         value: (uniform.value as number[][]).map((v: number[]) =>
-                            new THREE.Vector3().fromArray(v)
+                            new THREE.Vector3().fromArray(v).toArray()
                         ),
                         type: "3fv",
                     };
                     break;
                 case "uniform2f":
                     preparedUniforms[uniformName] = {
-                        value: new THREE.Vector2().fromArray(uniform.value as number[]),
+                        value: new THREE.Vector2().fromArray(uniform.value as number[]).toArray(),
                         type: "2f",
                     };
                     break;
@@ -248,10 +253,14 @@ const ShaderMaterial = ({
 
         preparedUniforms["u_time"] = { value: 0, type: "1f" };
         preparedUniforms["u_resolution"] = {
-            value: new THREE.Vector2(size.width * 2, size.height * 2),
-        }; // Initialize u_resolution
+            value: [size.width * 2, size.height * 2],
+            type: "2f",
+        };
         return preparedUniforms;
     };
+
+
+
 
     // Shader material
     const material = useMemo(() => {

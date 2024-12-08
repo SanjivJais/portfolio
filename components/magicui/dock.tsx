@@ -82,8 +82,11 @@ const DockIcon = ({
 }: DockIconProps) => {
     const ref = useRef<HTMLDivElement>(null);
 
-    // Ensure mousex is always a MotionValue<number>
-    const safeMousex: MotionValue<number> = mousex ?? useMotionValue(Infinity);
+    // Always call useMotionValue to create a default value
+    const defaultMousex = useMotionValue(Infinity);
+
+    // Use the passed `mousex` or fallback to the default
+    const safeMousex: MotionValue<number> = mousex || defaultMousex;
 
     const distanceCalc = useTransform(safeMousex, (val: number) => {
         const bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };

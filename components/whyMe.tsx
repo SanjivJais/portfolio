@@ -27,7 +27,7 @@ export function WhyMeRevealCanvas() {
                         />
                     </Card>
                     <Card
-                        title={<p>I'm a <span className="fancy_grad_text font-bold">quick</span> learner.</p>}
+                        title={<p>I&apos;m a <span className="fancy_grad_text font-bold">quick</span> learner.</p>}
                         icon={<RocketIcon />}
                         index={1}
                         hoveredIndex={hoveredIndex}
