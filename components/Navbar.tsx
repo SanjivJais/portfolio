@@ -10,7 +10,7 @@ import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
-export default function Navbar() {
+export const Navbar = () => {
     return (
         <div className="pointer-events-none fixed inset-x-0 bottom-0 z-30 mx-auto mb-6 flex origin-bottom h-full max-h-14">
             <div className="fixed bottom-0 inset-x-0 h-16 w-full bg-dark to-transparent backdrop-blur-lg [-webkit-mask-image:linear-gradient(to_top,black,transparent)]"></div>
@@ -58,7 +58,7 @@ export default function Navbar() {
                             </Tooltip>
                         </DockIcon>
                     ))}
-                
+
             </Dock>
         </div>
     );

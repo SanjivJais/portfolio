@@ -1,7 +1,7 @@
 import { Skills } from "@/components/Skills";
 import { Hero } from "@/components/Hero";
 import { Portfolio } from "@/components/Portfolio";
-import Navbar from "@/components/navbar";
+import { Navbar } from "@/components/navbar";
 import About from "@/components/About";
 import { WhyMeRevealCanvas } from "@/components/whyMe";
 import { Contact } from "@/components/contact";
