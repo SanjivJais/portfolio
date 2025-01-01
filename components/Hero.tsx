@@ -59,8 +59,8 @@ export const Hero = () => {
                                 as="button"
                                 className=" card_grad text-white flex items-center space-x-2 border-dark-400 py-2 px-6"
                             >
-                                <span>Download CV</span>
-                                <IoIosArrowRoundDown className='text-accent text-2xl' />
+                                <span>Ask For Resume</span>
+                                <IoIosArrowRoundDown className='text-accent text-2xl -rotate-[135deg]' />
                             </HoverBorderGradient>
                         </Link>
                     </div>

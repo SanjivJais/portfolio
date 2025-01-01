@@ -16,7 +16,7 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Sanjiv Jaiswal - Entreprenerial Web Developer | SEO Specialist",
+  title: "Sanjiv Jaiswal - Entrepreneurial Web Developer | Product Builder | SEO Specialist",
   description: "Entrepreneurial web developer building real products!",
   viewport: {
     width: "device-width",

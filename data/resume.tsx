@@ -14,18 +14,18 @@ export const DATA = {
         <p>My journey began with a BSc in Computer Science and IT, combined with a passion for <span className="bold-text">building products</span> that solve real-world problems. Along the way, I’ve been involved in various personal projects, and continuously strived to evolve as both a developer and a business strategist.</p>,
     avatarUrl: "/me-square.jpg",
 
-    cvDownloadLink: "#",
+    cvDownloadLink: "https://www.linkedin.com/in/sanjiv-jaiswal/",
 
     skills: [
         {
             title: "Web Development",
             description: <p>With an experience of 1.5+ years, I've been highly active in the web development space. I love to build valuable things!</p>,
-            tags: ["React", "Next.js", "JavaScript", "Typescript", "TailwindCSS", "Appwrite", "Git/GitHub", "UI/UX (Figma)"],
+            tags: ["React", "Next.js", "JavaScript", "Typescript", "TailwindCSS", "ASP.NET Core", "Appwrite", "Git/GitHub", "Figma (for UI/UX)"],
         },
         {
             title: "Product Building",
             description: <p>I love to build market-ready products bringing value to the table; tool for <span className="bold-text">Minecraft players</span>, <span className="bold-text">esports platform</span>, and <span className="bold-text">personal finance app</span> are quite recent ones!</p>,
-            tags: ["Product Strategy", "MVP Development", "Problem Solving", "Entreprenerial Mindset"],
+            tags: ["Critical Thinking", "MVP Development", "Problem Solving", "Entreprenerial Mindset"],
         },
         {
             title: "Business and Marketing",
