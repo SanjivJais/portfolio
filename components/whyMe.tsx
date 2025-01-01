@@ -45,7 +45,7 @@ export function WhyMeRevealCanvas() {
                         <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
                     </Card>
                     <Card
-                        title={<p>I'm highly <span className="fancy_grad_text font-bold">Adaptive</span> and <span className="fancy_grad_text font-bold">Flexible</span>.</p>}
+                        title={<p>I&apos;m highly <span className="fancy_grad_text font-bold">Adaptive</span> and <span className="fancy_grad_text font-bold">Flexible</span>.</p>}
                         icon={<EnergyIcon />}
                         index={2}
                         hoveredIndex={hoveredIndex}
