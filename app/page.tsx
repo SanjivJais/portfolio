@@ -18,9 +18,9 @@ export default function Home() {
         <div className="flex flex-col lg:mx-[260px] mx-14 ">
           <About />
           <Skills />
+          <Portfolio />
           <Experience />
           <Education />
-          <Portfolio />
           <WhyMeRevealCanvas />
           <Contact />
         </div>

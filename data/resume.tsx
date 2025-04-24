@@ -14,15 +14,19 @@ export const DATA = {
     </p>
   ),
   summary: (
-    <p>
-      My journey began with a BSc in Computer Science and IT, combined with a
-      passion for <span className="bold-text">building products</span> that
-      solve real-world problems. Along the way, I’ve been involved in various
-      personal projects, and continuously strived to evolve as both a developer
-      and a business strategist.
-    </p>
+    <>
+      <p>
+        <span className="font-bold text-white">
+          I build products with a sharp eye for real impact.
+        </span>{" "}
+        With a full-stack mindset and hands-on experience in React/Nextjs, .NET
+        Core, and scalable databases, I craft modern, practical solutions. I
+        enjoy making things AI-powered. Currently shipping my own projects while
+        exploring meaningful roles in product and engineering.
+      </p>
+    </>
   ),
-  avatarUrl: "/me-square.jpg",
+  avatarUrl: "/me-square.png",
 
   cvDownloadLink: "https://www.linkedin.com/in/sanjiv-jaiswal/",
 
@@ -31,17 +35,17 @@ export const DATA = {
       title: "Web Development",
       description: (
         <p>
-          With an experience of 1.5+ years, I've been highly active in the web
-          development space. I love to build valuable things!
+          I have been building tools and apps for{" "}
+          <span className="bold-text">over 2 years.</span>
         </p>
       ),
       tags: [
-        "React",
         "Next.js",
-        "JavaScript",
         "Typescript",
+        "React",
+        "JavaScript",
         "TailwindCSS",
-        "ASP.NET Core",
+        "ASP.NET Core Web API",
         "Appwrite",
         "Git/GitHub",
         "Figma (for UI/UX)",
@@ -51,11 +55,12 @@ export const DATA = {
       title: "Product Building",
       description: (
         <p>
-          I love to build market-ready products bringing value to the table;
-          tool for <span className="bold-text">Minecraft players</span>,{" "}
-          <span className="bold-text">esports platform</span>, and{" "}
-          <span className="bold-text">personal finance app</span> are quite
-          recent ones!
+          I love to build launchable products bringing value in the real world;
+          have attempted startups in{" "}
+          <span className="bold-text">
+          Personal Finance, Esports, and Online Scrap Selling, 
+          </span> {" "}
+          spaces.
         </p>
       ),
       tags: [
@@ -311,11 +316,26 @@ export const DATA = {
       image: "",
       description: "A web framework for Python",
     },
-    { 
+    {
       id: "dotnet-core-webapi",
       name: ".NET Core Web API",
       image: "",
-      description: "A cross-platform, high-performance framework for building modern APIs.",
+      description:
+        "A cross-platform, high-performance framework for building modern APIs.",
+    },
+    {
+      id: "postgresql",
+      name: "PostgreSQL",
+      image: "",
+      description:
+        "A powerful, open source object-relational database management system.",
+    },
+    {
+      id: "vercel",
+      name: "Vercel",
+      image: "",
+      description:
+        "A cloud platform for hosting static and dynamic web applications.",
     },
   ],
 
@@ -334,11 +354,13 @@ export const DATA = {
         "nextjs",
         "typescript",
         "tailwindcss",
-        "django",
-        "framer-motion",
         "shadcnui",
+        "framer-motion",
+        "django",
+        "postgresql",
+        "vercel",
       ],
-      image: "/project-thumbs/Project_thumb_Scrapal.png",
+      image: "/project-thumbs/Project_thumb_scrapal.png",
       video: "#",
     },
     {
@@ -378,13 +400,12 @@ export const DATA = {
     },
 
     {
-      title: "My Portfolio - V1",
+      title: "My Portfolio Website",
       description: (
         <p className="text-white-100 text-[15px]">
-          I built a completely thought out portfolio website to showcase my
-          personality, work, and skills. Improved my Nextjs and frontend library
-          skills while developing this page. I tried keeping it simple and
-          clean.{" "}
+          I built a completely thought-out portfolio website to showcase my
+          personality, work, and skills. My objective was to keep it simple and
+          easy to navigate.
         </p>
       ),
       link: "https://sanjivjaiswal.com.np",

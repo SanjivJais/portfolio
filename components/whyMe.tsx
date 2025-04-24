@@ -36,7 +36,7 @@ export function WhyMeRevealCanvas() {
           <Card
             title={
               <p className="font-bold">
-                I can do What <span className="fancy_grad_text font-bold">AI Can&apos;t</span>.
+                I Can Do What <span className="fancy_grad_text font-bold">AI Can&apos;t</span>.
               </p>
             }
             icon={<RocketIcon />}
