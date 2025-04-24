@@ -3,7 +3,6 @@ import { Spotlight } from './ui/Spotlight'
 import { IoIosArrowRoundDown } from 'react-icons/io'
 import { HoverBorderGradient } from './ui/hover-border-gradient'
 import Image from 'next/image'
-import { FaArrowRightLong } from 'react-icons/fa6'
 import Link from 'next/link'
 import { DATA } from '@/data/resume'
 
