@@ -15,7 +15,7 @@ export default function Home() {
       <div className="w-full flex flex-col items-center">
         <Navbar />
         <Hero />
-        <div className="flex flex-col lg:mx-[260px] mx-14 ">
+        <div className="flex flex-col lg:mx-[260px] md:mx-[200px] mx-14">
           <About />
           <Skills />
           <Portfolio />
