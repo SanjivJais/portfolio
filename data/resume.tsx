@@ -42,6 +42,7 @@ export const DATA = {
       tags: [
         "Next.js",
         "Typescript",
+        "Tanstack Query",
         "React",
         "JavaScript",
         "TailwindCSS",
@@ -58,8 +59,8 @@ export const DATA = {
           I love to build launchable products bringing value in the real world;
           have attempted startups in{" "}
           <span className="bold-text">
-          Personal Finance, Esports, and Online Scrap Selling, 
-          </span> {" "}
+            Personal Finance, Esports, and Online Scrap Selling,
+          </span>{" "}
           spaces.
         </p>
       ),
@@ -337,6 +338,13 @@ export const DATA = {
       description:
         "A cloud platform for hosting static and dynamic web applications.",
     },
+    {
+      id: "tanstack-query",
+      name: "Tanstack Query",
+      image: "",
+      description:
+        "A library for managing server state in React applications, enabling efficient handling of asynchronous data like API requests.",
+    },
   ],
 
   projects: [
@@ -352,6 +360,7 @@ export const DATA = {
       active: true,
       technologies: [
         "nextjs",
+        "tanstack-query",
         "typescript",
         "tailwindcss",
         "shadcnui",
