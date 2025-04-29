@@ -345,6 +345,20 @@ export const DATA = {
       description:
         "A library for managing server state in React applications, enabling efficient handling of asynchronous data like API requests.",
     },
+    {
+      id: "docker",
+      name: "Docker",
+      image: "",
+      description:
+        "A software platform that allows you to build, test, and deploy applications quickly.",
+    },
+    {
+      id: "mongodb",
+      name: "MongoDB",
+      image: "",
+      description:
+        "A document database that stores data in JSON-like documents.",
+    },
   ],
 
   projects: [
@@ -353,7 +367,8 @@ export const DATA = {
       description: (
         <p className="text-white-100 text-[15px]">
           A 3-person startup attempt to create a platform for selling scrap
-          online, connecting buyers and sellers directly.
+          online, connecting buyers and sellers directly. We showcased the
+          platform to a few stakeholders and received positive feedback.
         </p>
       ),
       link: "https://scrapal.com",
@@ -370,6 +385,33 @@ export const DATA = {
         "vercel",
       ],
       image: "/project-thumbs/Project_thumb_scrapal.png",
+      video: "#",
+    },
+    {
+      title: "Sujhav - AI-powered Issues Crowdsourcing Platform",
+      description: (
+        <p className="text-white-100 text-[15px]">
+          Sujhav is a prototype of an AI-powered issues and suggestions
+          crowdsourcing platform which moderates content, uses semantic search
+          to find similar posts, and makes clusters/topics keeping those posts
+          together. Cluster's topic and summaries are automatically updated
+          based on the overall content of the cluster.
+        </p>
+      ),
+      link: "https://sujhav.vercel.app",
+      active: true,
+      technologies: [
+        "nextjs",
+        "tanstack-query",
+        "typescript",
+        "tailwindcss",
+        "shadcnui",
+        "dotnet-core-webapi",
+        "mongodb",
+        "vercel",
+        "docker",
+      ],
+      image: "/project-thumbs/Project_thumb_Sujhav.png",
       video: "#",
     },
     {
